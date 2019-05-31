@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NotBundledComponent } from './not-bundled/not-bundled.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,10 @@ const routes: Routes = [
   {
     path: 'orders',
     loadChildren: './orders/orders.module#OrdersModule'
+  },
+  {
+    path: 'not-bunded',
+    component: NotBundledComponent,
   },
   {
     path: '',
